@@ -15,9 +15,7 @@ export default function HomePage() {
       <Hero />
       <Features1 />
       <Features2 />
-      <Features3 />
       <Features4 />
-      <Testimonials />
       <Pricing />
       <FAQ />
       <CTA />
