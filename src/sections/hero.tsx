@@ -11,45 +11,45 @@ import Link from "next/link";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 const settings = {
-  headline: 'Hello YouTube',
-  subheadline: 'Privacy-friendly web analytics made and hosted in Germany — powerful, cookie-free, and fully compliant with GDPR, CCPA, and PECR.',
+  headline: 'Nonton Theater JKT48 Lebih Dekat, Lebih Hemat',
+  subheadline: 'Team48Live menghadirkan layanan live stream theater JKT48 dengan kualitas terbaik dan harga yang bersahabat di kantong. Nikmati momen spesial idolamu kapan saja, di mana saja.',
   mainCTA: {
-    content: 'try it for free',
+    content: 'Mulai Nonton Sekarang',
     href: '#'
   },
   secondaryCTA: {
-    content: 'view live demo',
+    content: 'Lihat Jadwal Theater',
     href: '#'
   },
   illustration: '/illustration.svg',
   reviews: [
     {
-      name: "John Doe",
-      designation: "Software Engineer",
+      name: "Andi Pratama",
+      designation: "Wota JKT48",
       image:
         "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
     },
     {
-      name: "Robert Johnson",
-      designation: "Product Manager",
+      name: "Rizky Fajar",
+      designation: "Member sejak 2021",
       image:
         "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
     },
     {
-      name: "Jane Smith",
-      designation: "Data Scientist",
+      name: "Sari Dewi",
+      designation: "Oshi Freya",
       image:
         "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
     },
     {
-      name: "Emily Davis",
-      designation: "UX Designer",
+      name: "Budi Santoso",
+      designation: "Oshi Shani",
       image:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
     },
     {
-      name: "Tyler Durden",
-      designation: "Soap Developer",
+      name: "Hendra Wijaya",
+      designation: "Wota Setia",
       image:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
     }
@@ -117,7 +117,7 @@ export default function Hero() {
                 <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
               </div>
 
-              <span className="text-xs">Trusted by 500+ Customers</span>
+              <span className="text-xs">Dipercaya 500+ Wota JKT48</span>
             </div>
           </div>
         </SlideEffect>
