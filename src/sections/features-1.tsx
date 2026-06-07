@@ -9,35 +9,33 @@ import Image from "next/image"
 const settings = {
   badge: {
     number: 1,
-    text: 'get started in seconds',
+    text: 'mulai nonton sekarang',
   },
-  title: 'Set Up in Minutes',
-  description: 'Simply add the script to your site, choose from a variety of plugins, or go for the API backend integration. Pirsch is the plug-and-play Google Analytics alternative.',
+  title: 'Semua Show, Satu Platform',
+  description: 'Team48Live menghadirkan akses live stream theater JKT48 dengan harga terjangkau. Pilih per show atau langganan bulanan untuk akses tak terbatas ke semua pertunjukan.',
   card_1: {
-    title: 'Effortless Setup',
-    content: 'Pirsch offers plugins, libraries, and tutorials for the most popular CMSs, website builders, and programming languages to get you up and running in no time.',
+    title: 'Akses Semua Show',
+    content: 'Dengan membership bulanan, kamu bisa nonton semua show theater JKT48 tanpa batas. Dari setlist reguler hingga show spesial, semua tersedia di satu tempat.',
     carousel_images: [
+      'https://upload.wikimedia.org/wikipedia/id/thumb/6/6a/JKT48_Logo.svg/1200px-JKT48_Logo.svg.png',
       'https://cdn.worldvectorlogo.com/logos/react-2.svg',
       'https://cdn.worldvectorlogo.com/logos/vue-9.svg',
       'https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg',
       'https://cdn.worldvectorlogo.com/logos/nestjs.svg',
       'https://cdn.worldvectorlogo.com/logos/laravel-2.svg',
-      'https://cdn.worldvectorlogo.com/logos/svelte-1.svg',
-      'https://cdn.worldvectorlogo.com/logos/golang-1.svg',
-      'https://cdn.worldvectorlogo.com/logos/rust.svg',
     ]
   },
   card_2: {
-    title: 'Seamless Switch',
-    content: 'Migrating from other web analytics solutions? Import your data from Plausible, Fathom, or Google Analytics in just a few clicks and easily continue where you left off.'
+    title: 'Harga Per Show Murah',
+    content: 'Tidak mau langganan bulanan? Tenang, kamu tetap bisa nonton per show dengan harga yang sangat bersahabat di kantong. Bayar sesuai kebutuhan, tanpa paksaan.'
   },
   card_3: {
-    title: 'No Cookie Banner',
-    content: 'Say goodbye to consent banners: Pirsch works without cookies and never stores your visitors personal identifiable information.'
+    title: 'Membership Bulanan',
+    content: 'Langganan bulanan Team48Live membuka akses ke seluruh show theater JKT48. Cocok buat wota setia yang tidak mau ketinggalan satu show pun.'
   },
   card_4: {
-    title: 'Privacy-Friendly by Design',
-    content: 'Built from the ground up with privacy in mind and with an open-source core, Pirsch offers uncompromising GDPR, CCPA, PECR, and Schrems II compliant data protection. All data is hosted on a secure server cluster in Germany.',
+    title: 'Streaming Tanpa Ribet',
+    content: 'Cukup daftar, pilih show, dan langsung nonton. Tidak perlu antri tiket fisik atau khawatir kehabisan. Team48Live hadir agar kamu bisa selalu dekat dengan idolamu kapan saja dan di mana saja.',
     image: 'https://framerusercontent.com/images/6jTglLZFhLYMIuOe7EC0QFeykU.png?scale-down-to=512',
   },
 }
