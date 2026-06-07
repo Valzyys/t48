@@ -124,14 +124,14 @@ export default function Hero() {
 
         {/* Illustration */}
         <SlideEffect className="relative" isSpring={false} duration={1.3}>
-          <Image
+          {/* <Image
             src={settings.illustration}
             alt='illustration'
             width={1920}
             height={1080}
             priority
             loading="eager"
-          />
+          /> */}
           <FadeEffect />
         </SlideEffect>
       </section>
