@@ -11,7 +11,7 @@ import Link from "next/link";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 const settings = {
-  headline: 'Nonton Theater JKT48 Lebih Dekat, Lebih Hemat',
+  headline: 'Theater JKT48 di Genggamanmu',
   subheadline: 'Team48Live menghadirkan layanan live stream theater JKT48 dengan kualitas terbaik dan harga yang bersahabat di kantong. Nikmati momen spesial idolamu kapan saja, di mana saja.',
   mainCTA: {
     content: 'Mulai Nonton Sekarang',
