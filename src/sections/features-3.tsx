@@ -5,7 +5,7 @@ import Card from "@/components/card"
 import SlideEffect from "@/components/slide-effect"
 import Image from "next/image"
 import { useEffect, useState } from "react"
-import { Calendar, Clock, Users } from "lucide-react"
+import { Calendar, Clock } from "lucide-react"
 
 interface IDNShow {
   slug: string
@@ -50,11 +50,6 @@ function formatTime(timestamp: number) {
   })
 }
 
-function formatPrice(price: number, currency: string) {
-  if (currency === 'gold') return `${price} Gold`
-  return `Rp ${price.toLocaleString('id-ID')}`
-}
-
 function StatusBadge({ status }: { status: string }) {
   const map: Record<string, { label: string; class: string }> = {
     scheduled: { label: 'Segera', class: 'bg-blue-100 text-blue-600' },
@@ -89,24 +84,20 @@ export default function Features3() {
 
   return (
     <div className="space-y-6 sm:space-y-7 md:space-y-8 lg:space-y-10 mx-auto text-center">
-      {/* Badge */}
       <SlideEffect>
         <Badge number={settings.badge.number} text={settings.badge.text} />
       </SlideEffect>
 
-      {/* Title */}
       <SlideEffect>
         <h2 className="text-2xl md:text-4xl lg:text-header capitalize text-transparent bg-clip-text bg-gradient-to-b from-black to-black/60 font-medium leading-normal">
           {settings.title}
         </h2>
       </SlideEffect>
 
-      {/* Description */}
       <SlideEffect className="px-2 sm:px-10 md:px-0 w-full md:max-w-3/4 mx-auto text-sm lg:text-base">
         {settings.description}
       </SlideEffect>
 
-      {/* Cards */}
       {loading && (
         <div className="text-center py-12 text-gray-400">Memuat jadwal show...</div>
       )}
@@ -129,57 +120,55 @@ export default function Features3() {
               className="col-span-1 h-full"
               isSpring={false}
             >
-              <Card className="text-left flex flex-col gap-4 h-full">
-                {/* Thumbnail */}
-                <div className="relative w-full aspect-video rounded-xl overflow-hidden">
-                  <Image
-                    src={show.image_url}
-                    alt={show.title}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute top-2 right-2">
-                    <StatusBadge status={show.status} />
-                  </div>
+              <div className="relative rounded-2xl overflow-hidden group cursor-pointer h-80">
+                {/* Thumbnail full card */}
+                <Image
+                  src={show.image_url}
+                  alt={show.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+
+                {/* Status badge top right */}
+                <div className="absolute top-3 right-3">
+                  <StatusBadge status={show.status} />
                 </div>
 
-                {/* Creator */}
-                <div className="flex items-center gap-2">
-                  <Image
-                    src={show.creator.image_url}
-                    alt={show.creator.name}
-                    width={28}
-                    height={28}
-                    className="rounded-full"
-                  />
-                  <span className="text-sm font-medium text-black">{show.creator.name}</span>
-                </div>
-
-                {/* Title */}
-                <h3 className="text-lg md:text-title text-black font-medium leading-snug">
-                  {show.title}
-                </h3>
-
-                {/* Date & Time */}
-                <div className="flex flex-col gap-1 text-sm text-gray-500">
+                {/* Content bottom */}
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-left space-y-2">
+                  {/* Creator */}
                   <div className="flex items-center gap-2">
-                    <Calendar size={14} />
-                    <span>{formatDate(show.scheduled_at)}</span>
+                    <Image
+                      src={show.creator.image_url}
+                      alt={show.creator.name}
+                      width={22}
+                      height={22}
+                      className="rounded-full"
+                    />
+                    <span className="text-xs text-white/80">{show.creator.name}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Clock size={14} />
-                    <span>{formatTime(show.scheduled_at)} WIB</span>
-                  </div>
-                </div>
 
-                {/* Price */}
-                <div className="mt-auto pt-3 border-t border-border flex items-center justify-between">
-                  <span className="text-sm text-gray-500">Harga Tiket</span>
-                  <span className="font-semibold text-black">
-                    {formatPrice(show.idnliveplus.liveroom_price, show.idnliveplus.currency_code)}
-                  </span>
+                  {/* Title */}
+                  <h3 className="text-base font-semibold text-white leading-snug">
+                    {show.title}
+                  </h3>
+
+                  {/* Date & Time */}
+                  <div className="flex flex-col gap-1 text-xs text-white/70">
+                    <div className="flex items-center gap-1.5">
+                      <Calendar size={12} />
+                      <span>{formatDate(show.scheduled_at)}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <Clock size={12} />
+                      <span>{formatTime(show.scheduled_at)} WIB</span>
+                    </div>
+                  </div>
                 </div>
-              </Card>
+              </div>
             </SlideEffect>
           ))}
         </div>
