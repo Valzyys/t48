@@ -44,7 +44,7 @@ export default function Features2() {
           <Card>
             <h3 className="text-xl md:text-title text-black font-medium">{settings.card_1.title}</h3>
             <p className="mb-4">{settings.card_1.content}</p>
-            <Image src={settings.card_1.image} alt={settings.card_1.title} width={512} height={512} />
+            
           </Card>
         </SlideEffect>
         {/* card 2 */}
@@ -52,10 +52,7 @@ export default function Features2() {
           <Card>
             <h3 className="text-xl md:text-title text-black font-medium">{settings.card_2.title}</h3>
             <p>{settings.card_2.content}</p>
-            <div className="relative">
-              <Image src={settings.card_2.image} alt={settings.card_2.title} width={512} height={512} />
-              <FadeEffect color='secondary' />
-            </div>
+            
           </Card>
         </SlideEffect>
       </div>
