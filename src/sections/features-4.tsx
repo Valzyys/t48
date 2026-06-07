@@ -11,25 +11,25 @@ import Link from "next/link"
 const settings = {
   badge: {
     number: 4,
-    text: 'SMART TEAMWORK',
+    text: 'KOMUNITAS WOTA',
   },
-  title: 'Empower People With Data',
-  description: 'Reduce friction and enhance productivity by getting the right information to the right people with minimal effort, enabling them to thrive and excel.',
+  title: 'Bersama Lebih Seru',
+  description: 'Team48Live bukan sekadar platform streaming — kami membangun komunitas wota JKT48 yang solid. Nonton bareng, diskusi, dan dukung member favorit bersama-sama.',
   card_1: {
-    title: 'Easily Manage Teams and Sites',
-    content: "Work happens in teams. That's why Pirsch enables collaboration right from the start: Simply invite team members or clients via email, assign them roles, and give them access to the dashboards they need to excel. All people, sites and custom themes in one place.",
+    title: 'Nonton Bareng Sesama Wota',
+    content: 'Gabung bersama ribuan wota JKT48 yang sudah mempercayai Team48Live. Nikmati live stream theater sambil berinteraksi dengan sesama fans. Karena nonton bareng selalu lebih seru daripada sendirian.',
     CTA: {
-      content: 'Start 30-day Free Trial',
+      content: 'Mulai Nonton Sekarang',
       href: '#'
     },
     labels: [
-      'my-site.com',
-      'example.com',
-      'my-saas.ai',
-      'my-blog.com',
-      'potfolio.me',
-      'new-site.com',
-      'client-site.io',
+      'Team Ketchup',
+      'Team J',
+      'Team KIII',
+      'Team T',
+      'Trainee',
+      'Show Spesial',
+      'Setlist Baru',
     ],
     avatars: [
       'https://avatar.iran.liara.run/public/38',
@@ -42,12 +42,12 @@ const settings = {
     ]
   },
   card_2: {
-    title: 'Receive Automatic Email Reports',
-    content: 'Keep colleagues, customers, or partners in the loop with automatic email reports. Regularly receive a concise summary of the latest activities with just one click.',
+    title: 'Notifikasi Jadwal Show',
+    content: 'Tidak mau ketinggalan show favorit? Team48Live akan mengingatkan kamu setiap ada jadwal theater baru. Pastikan kamu selalu jadi yang pertama tahu.',
   },
   card_3: {
-    title: 'Share Dashboards With Anybody',
-    content: 'Working with external partners? Create unique access links to securely grant access to dashboards or make them public on your personal subdomain.',
+    title: 'Support Member Favoritmu',
+    content: 'Setiap tiket yang kamu beli adalah bentuk dukungan nyata untuk member JKT48. Bersama Team48Live, kamu ikut berkontribusi dalam ekosistem JKT48.',
   },
 }
 
