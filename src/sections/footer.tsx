@@ -1,24 +1,22 @@
 'use client'
-
-import { Facebook, Github, Instagram, Youtube } from "lucide-react"
+import { Instagram, Youtube, MessageCircle } from "lucide-react"
 import Link from "next/link"
 
 const settings = {
   links: [
-    { title: 'About', href: '/' },
-    { title: 'Blog', href: '/' },
-    { title: 'Jobs', href: '/' },
-    { title: 'Press', href: '/' },
-    { title: 'Affiliate', href: '/' },
-    { title: 'Contact Us', href: '/' },
+    { title: 'Beranda', href: '#' },
+    { title: 'Fitur', href: '#features' },
+    { title: 'Jadwal Show', href: '#jadwal' },
+    { title: 'Harga', href: '#pricing' },
+    { title: 'FAQ', href: '#faq' },
+    { title: 'Hubungi Kami', href: 'https://wa.me/6282135963767' },
   ],
   socialMedia: [
-    { title: 'Facebook', icon: Facebook, href: '/' },
-    { title: 'Instagram', icon: Instagram, href: '/' },
-    { title: 'Github', icon: Github, href: '/' },
-    { title: 'Youtube', icon: Youtube, href: '/' },
+    { title: 'Instagram', icon: Instagram, href: 'https://instagram.com/team48live' },
+    { title: 'YouTube', icon: Youtube, href: 'https://youtube.com' },
+    { title: 'WhatsApp', icon: MessageCircle, href: 'https://wa.me/6282135963767' },
   ],
-  copyright: '© 2024 Your Company, Inc. All rights reserved.'
+  copyright: '© 2026 Team48Live. All rights reserved.'
 }
 
 export default function Footer() {
@@ -30,14 +28,14 @@ export default function Footer() {
           <Link key={link.title} href={link.href}>{link.title}</Link>
         ))}
       </div>
-
       {/* Social links */}
       <div className="flex flex-wrap md:flex-row items-center justify-center gap-7 md:gap-10">
         {settings.socialMedia.map((social, index) => (
-          <Link title={social.title} key={index} href={social.href}><social.icon /></Link>
+          <Link title={social.title} key={index} href={social.href} target="_blank" rel="noopener noreferrer">
+            <social.icon />
+          </Link>
         ))}
       </div>
-
       {/* copyright */}
       <p className="text-center">{settings.copyright}</p>
     </footer>
