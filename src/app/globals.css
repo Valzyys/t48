@@ -4,12 +4,11 @@
 @theme {
   --color-background: #ffffff;
   --color-foreground: #707070;
-  --color-primary: #6ECE9D;
-  --color-secondary: #F8F5ED;
-  --color-accent: #FFDA6E;
+  --color-primary: #60A5FA;
+  --color-secondary: #F0F6FF;
+  --color-accent: #93C5FD;
   --color-muted: #F0F0F0;
   --color-border: rgba(0, 0, 0, 0.1);
-
   --text-base: 18px;
   --text-link: 16px;
   --text-header: 64px;
@@ -28,4 +27,3 @@
 html {
   scroll-behavior: smooth;
 }
-
