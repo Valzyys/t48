@@ -105,7 +105,7 @@ export default function Hero() {
           </div>
 
           {/* Reviews */}
-          <div className="flex flex-col md:flex-row gap-2 md:gap-5 justify-center">
+          {/*<div className="flex flex-col md:flex-row gap-2 md:gap-5 justify-center">
             <AnimatedTooltip items={settings.reviews} />
 
             <div className="flex flex-col justify-center items-center md:items-start gap-1 md:gap-2">
@@ -119,7 +119,7 @@ export default function Hero() {
 
               <span className="text-xs">Dipercaya 500+ Wota JKT48</span>
             </div>
-          </div>
+          </div>*/}
         </SlideEffect>
 
         {/* Illustration */}
