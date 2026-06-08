@@ -100,8 +100,8 @@ export default function Hero() {
 
               <Button size='default' className="capitalize w-full flex lg:hidden" variant='secondary'>
                 {settings.secondaryCTA.content}
-              </Button>*/}
-            </Link>
+              </Button>
+            </Link>*/}
           </div>
 
          
