@@ -11,7 +11,6 @@ import { useState } from "react"
 const settings = {
   navLinks: [
     { name: 'home', href: '/' },
-    { name: 'features', href: '#features' },
     { name: 'pricing', href: '#pricing' },
     { name: 'testimonials', href: '#testimonials' },
     { name: 'FAQ', href: '#faq' },
