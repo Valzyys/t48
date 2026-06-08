@@ -93,14 +93,14 @@ export default function Hero() {
               </Button>
             </Link>
 
-            <Link href={settings.secondaryCTA.href} className="w-full">
+            {/*<Link href={settings.secondaryCTA.href} className="w-full">
               <Button size='lg' className="capitalize w-full hidden lg:flex" variant='secondary'>
                 {settings.secondaryCTA.content}
               </Button>
 
               <Button size='default' className="capitalize w-full flex lg:hidden" variant='secondary'>
                 {settings.secondaryCTA.content}
-              </Button>
+              </Button>*/}
             </Link>
           </div>
 
