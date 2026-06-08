@@ -17,7 +17,7 @@ export default function Logo({ className }: { className?: string }) {
         letterSpacing="-0.5"
       >
         <tspan fill="currentColor">TEAM</tspan>
-        <tspan fill="#6ECE9D">48</tspan>
+        <tspan fill="#60A5FA">48</tspan>
         <tspan fill="currentColor">Live</tspan>
       </text>
     </svg>
