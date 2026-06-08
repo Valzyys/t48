@@ -104,24 +104,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Reviews */}
-          {/*<div className="flex flex-col md:flex-row gap-2 md:gap-5 justify-center">
-            <AnimatedTooltip items={settings.reviews} />
-
-            <div className="flex flex-col justify-center items-center md:items-start gap-1 md:gap-2">
-              <div className="flex gap-px">
-                <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
-                <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
-                <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
-                <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
-                <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
-              </div>
-
-              <span className="text-xs">Dipercaya 500+ Wota JKT48</span>
-            </div>
-          </div>*/}
-        </SlideEffect>
-
+         
         {/* Illustration */}
         <SlideEffect className="relative" isSpring={false} duration={1.3}>
           {/* <Image
