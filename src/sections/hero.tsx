@@ -75,35 +75,22 @@ export default function Hero() {
           {settings.subheadline}
         </SlideEffect>
 
-        {/* CTA */}
         <SlideEffect
           className="flex flex-col gap-8 md:gap-5 items-center justify-center w-full md:w-fit"
         >
-          {/* Buttons */}
           <div className="flex flex-col md:flex-row items-center w-full justify-center gap-3 md:gap-4 mt-1">
             <Link href={settings.mainCTA.href} className="w-full">
               <Button size='lg' className="capitalize w-full hidden lg:flex">
                 {settings.mainCTA.content}
                 <ArrowRight />
               </Button>
-
               <Button size='default' className="capitalize w-full flex lg:hidden">
                 {settings.mainCTA.content}
                 <ArrowRight />
               </Button>
             </Link>
-
-            {/*<Link href={settings.secondaryCTA.href} className="w-full">
-              <Button size='lg' className="capitalize w-full hidden lg:flex" variant='secondary'>
-                {settings.secondaryCTA.content}
-              </Button>
-
-              <Button size='default' className="capitalize w-full flex lg:hidden" variant='secondary'>
-                {settings.secondaryCTA.content}
-              </Button>
-            </Link>*/}
           </div>
-
+        </SlideEffect>
          
         {/* Illustration */}
         <SlideEffect className="relative" isSpring={false} duration={1.3}>
