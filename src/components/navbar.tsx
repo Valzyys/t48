@@ -17,8 +17,8 @@ const settings = {
     { name: 'FAQ', href: '#faq' },
   ],
   cta: {
-    content: 'try it for free',
-    href: '/'
+    content: 'Tonton Sekarang',
+    href: 'https://stream.t48live.my.id'
   }
 }
 
