@@ -15,7 +15,7 @@ const settings = {
   subheadline: 'Team48Live menghadirkan layanan live stream theater JKT48 dengan kualitas terbaik dan harga yang bersahabat di kantong. Nikmati momen spesial idolamu kapan saja, di mana saja.',
   mainCTA: {
     content: 'Mulai Nonton Sekarang',
-    href: 'https://stream.jkt48connect.com'
+    href: 'https://stream.team48live.my.id'
   },
   secondaryCTA: {
     content: 'Lihat Jadwal Theater',
